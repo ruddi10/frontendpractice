@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px;
+   
+}
+.ham{
+    display: none;
+}
+#recruit{
+    font-weight: bold;
+}
+.logo{
+    width: 3.5rem;
+    padding-top: 0.5rem;
+    align-content: center;
+    margin-right: 0.8rem;
+}
+a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #3B3736;
+    padding: 1.5rem;
+    text-transform: uppercase;
+
+}
+#home{
+    font-weight: 900;
+}
+.options{
+    display: flex;
+
+}
+.wrapper{
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+.imi{
+    display: flex;
+    align-items: center;
+}
+.subhead{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    color: #3B3736;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 1rem;
+}
+.main .subhead{
+    font-size: 3.2rem;
+}
+.backdrop{
+    background-color: #F8D16C;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    top:0;
+    left: 25%;
+}
+.heading{
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+}
+.main{
+    background: url('images/banner.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+.grid1{
+    display: grid;
+    max-width: 1000px;
+    margin:4rem auto;
+    grid-template-columns:100% ;
+    grid-template-rows: repeat(minmax(300px,auto));
+
+}
+.subtext{
+    font-size: 1.3rem;
+    color: #878787;
+    font-weight: normal;
+    margin-top: -0.5rem;
+    padding-left: 0.2rem;
+}
+.subtext strong{
+    font-size: 1.3rem;
+}
+.ghead .subhead{
+    color: black;
+    padding-bottom: 0;
+
+}
+.ghead .backdrop{
+    height: 40%;
+}
+.para{
+    background-color: #f7f7f7;
+    padding:2rem 3rem;
+}
+.rech{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.info{
+    padding-top: 2rem;
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+.second{
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+.subgrid{
+    display: grid;
+    grid-template-columns:46% 8% 46% ;
+    grid-template-rows: repeat(minmax(100px,auto));
+}
+.info h1{
+    color: black;
+    font-size: 1.4rem;
+}
+.more{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.more strong{
+    font-size: 1.1rem;
+}
+.division{
+    display: flex;
+    flex-direction: column;
+
+}
+.division div{
+    flex: 2.5;
+}
+.division .or{
+    flex: 1;
+}
+.download{
+    width: 1.1rem;
+}
+.btn{
+    margin-top: 2rem;
+}
+.btn span{
+    padding-left: 0.8rem;
+    color: black;
+    font-weight: 700;
+}
+.para1{
+    background-color: #f7f7f7;
+    padding:2rem 3rem; 
+}
+.para1 .info{
+    padding-top: 1rem;
+}
+
+.footwrapper{
+    background-color: #293B52;
+}
+.footer{
+   max-width: 1200px;
+   margin: auto;
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+.navoptions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icons img{
+    width: 1rem;
+    margin: 0.5rem;
+    
+}
+.navoptions>div{
+    color: #F8D16C;
+    padding: 0 0.8rem;
+    font-size: 0.8rem;
+}
+.line{
+    border: 1px solid #a4a4a4;
+    height: 100%;
+    width: 0;
+    margin: auto;
+}
+.or{
+    color: #cccccc;
+    font-size: 1.2rem;
+    align-self: center;
+    padding-top: 1rem;
+}
+@media screen and (max-width:600px)
+{
+    .options,.grid2,.seperate,.grid3{
+        display: none;
+
+    }
+    .ham{
+        display: block;
+        width: 2rem;
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    .backdrop{
+        width: 75%;
+    }
+    .main{
+        background: url(images/banner_mobile.png);
+        background-size: contain;
+    }
+    .grid1 .backdrop{
+        height: 35%;
+        width: 70%;
+    }
+    .subtext,.subtext strong{
+        font-size: 1.2rem;
+    }
+    .para{
+        padding: 2rem 3rem;
+        margin: auto 1rem;
+    }
+    .subgrid{
+        grid-template-columns:100% ;
+        
+
+    }
+    .info{
+        padding-top: 3rem;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .division{
+        flex-direction: row;
+    }
+    .line{
+        width: 100%;
+        height: 0;
+    }
+    
+
+
+
+
+    .navoptions{
+        display: none;
+    }
+    .footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    .social-icons>img{
+        padding: 0.4rem;
+        width: 2rem;
+    }
+    .date,.datecont{
+        font-size: 1.1rem;
+    }
+    .datecont{
+        line-height: 1.7rem;
+    }
+    .cont2{
+        text-align: center;
+    }
+    .linewrap{
+        align-self: center;
+    }
+    .or{
+        padding: 0;
+        align-self: center;
+        text-align: center;
+    }
+   .btn{
+       text-align: center;
+   }
+
+}
